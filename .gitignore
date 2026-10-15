@@ -1,0 +1,23 @@
+# Private upstream checkout and runtime state
+apps/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+*.db
+*.db-*
+*.sqlite*
+*.pem
+*.key
+runtime/*.json
+runtime/backups/
+runtime/recovery-browser/
+**/*-private.*
+**/browser_data/
+**/node_modules/
+output/
+local-data/

@@ -1,0 +1,56 @@
+diff --git a/tests/test_slider_verification_guards.py b/tests/test_slider_verification_guards.py
+index abba4db..745245e 100644
+--- a/tests/test_slider_verification_guards.py
++++ b/tests/test_slider_verification_guards.py
+@@ -222,6 +222,33 @@ class SliderVerificationGuardsTest(unittest.TestCase):
+ 
+         self.assertTrue(slider.check_page_changed())
+ 
++    @mock.patch("utils.xianyu_slider_stealth.time.sleep", return_value=None)
++    def test_visible_verification_iframe_on_chat_page_is_not_success(self, _mock_sleep):
++        page = _FakePage(title="聊天_闲鱼", url="https://www.goofish.com/im")
++        frame = _FakePage(
++            title="验证码拦截",
++            url="https://passport.goofish.com/newlogin/login.do/____tmd____/punish",
++            selectors={".nc-container": _FakeElement(visible=True)},
++        )
++        page.frames = [frame]
++        slider = self._make_slider(page)
++        slider._detected_slider_frame = frame
++        slider.check_verification_failure = lambda: False
++
++        self.assertFalse(slider.check_verification_success_fast(_FakeElement()))
++        self.assertNotEqual(slider.last_verification_feedback.get("status"), "success")
++
++    @mock.patch("utils.xianyu_slider_stealth.time.sleep", return_value=None)
++    def test_completed_verification_iframe_can_finish_after_container_disappears(self, _mock_sleep):
++        page = _FakePage(title="聊天_闲鱼", url="https://www.goofish.com/im")
++        frame = _FakePage(url="https://passport.goofish.com/", selectors={})
++        page.frames = [frame]
++        slider = self._make_slider(page)
++        slider._detected_slider_frame = frame
++        slider._detect_special_captcha_block = lambda _target=None: None
++
++        self.assertTrue(slider.check_verification_success_fast(_FakeElement()))
++
+     @mock.patch("utils.xianyu_slider_stealth.time.sleep", return_value=None)
+     def test_check_verification_success_fast_rejects_punish_after_container_missing(self, _mock_sleep):
+         page = _FakePage(
+diff --git a/utils/xianyu_slider_stealth.py b/utils/xianyu_slider_stealth.py
+index d7d7c85..4a218db 100644
+--- a/utils/xianyu_slider_stealth.py
++++ b/utils/xianyu_slider_stealth.py
+@@ -9206,11 +9206,8 @@ class XianyuSliderStealth:
+                 self.last_verification_feedback = {"status": "success", "source": "container_missing", "message": "滑块容器已消失"}
+                 return True
+             
+-            if self.check_page_changed():
+-                logger.info(f"【{self.pure_user_id}】✓ 页面状态已变化，按验证成功处理")
+-                self.last_verification_feedback = {"status": "success", "source": "page_changed", "message": "页面状态已变化"}
+-                return True
+-
++            # 验证可能嵌在聊天页的 iframe 中；容器仍可见时，外层 URL
++            # 本来就可以是 /im，不能据此结束人工验证等待。
+             if self._check_login_success_by_element(self.page):
+                 logger.info(f"【{self.pure_user_id}】✓ 已检测到登录成功元素，按验证成功处理")
+                 self.last_verification_feedback = {"status": "success", "source": "login_element_detected", "message": "已检测到登录成功元素"}

@@ -1,0 +1,99 @@
+{
+  "id": "CS",
+  "name": "创新创业",
+  "slug": "innovation-startup",
+  "asset_revision": "2026-10-13",
+  "publication_status": "materials_ready_not_verified_live",
+  "source_presentation_count": 694,
+  "showcased_deck_count": 4,
+  "showcased_pages": 82,
+  "images": [
+    {
+      "position": 1,
+      "title": "主图",
+      "file": "images/01.jpg",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 872857,
+      "sha256": "12cef2e81002c20bd8f2a639fd997460f8c308ec1765d832e54923724ce0fcaa"
+    },
+    {
+      "position": 2,
+      "title": "项目背景与技术方案",
+      "file": "images/02.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1334413,
+      "sha256": "effb16b3822749066e38f2925735d9572da7ca260a9051ac02940db7c0e8c1c9"
+    },
+    {
+      "position": 3,
+      "title": "应用场景与发展规划",
+      "file": "images/03.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1223617,
+      "sha256": "b5b96fbed0c9a47df274c202a6d3f45e5c56ab621f7b6bad176e96be1e074e0e"
+    },
+    {
+      "position": 4,
+      "title": "非遗项目与创新路径",
+      "file": "images/04.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1409202,
+      "sha256": "9829c5b441cf8354b6327e790fda88c4c6e72031d0e47427c18a9fd1cc93a108"
+    },
+    {
+      "position": 5,
+      "title": "团队配置与商业规划",
+      "file": "images/05.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1252891,
+      "sha256": "4574847f58b87f057307b36d843b531b6dc76c9416c71d6e875dd61456a81815"
+    },
+    {
+      "position": 6,
+      "title": "项目框架与团队展示",
+      "file": "images/06.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1202776,
+      "sha256": "04343f77b9af6e0253775c9dc6b56e4c9d2f2f0ba15e115525efeeef8f02982b"
+    },
+    {
+      "position": 7,
+      "title": "产品服务与成果展示",
+      "file": "images/07.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1193541,
+      "sha256": "bd16114625a452935dd1ecec43214b04e8f97305e576e9bd58901eb9d0f4c739"
+    },
+    {
+      "position": 8,
+      "title": "技术产品与商业模式",
+      "file": "images/08.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1203434,
+      "sha256": "dbde6781751b6100ceb24072b5a23aca211a3139f57633b81be0b63beb7e269b"
+    },
+    {
+      "position": 9,
+      "title": "应用展示与财务规划",
+      "file": "images/09.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1127469,
+      "sha256": "bb5fc0981ff67361f8a6870c0d7da6f498de2f46515e11dcc323241f4110fda7"
+    }
+  ],
+  "copy_file": "listing-copy.txt",
+  "notes": [
+    "本仓库只展示已制作的商品发布素材，未验证闲鱼实际上架。",
+    "图片为依据真实PPT选样制作的AI辅助展示图，不是逐像素原页截图。",
+    "784/694按演示文件数量计，含模板、案例和指南，不是全部空白可编辑模板。"
+  ]
+}

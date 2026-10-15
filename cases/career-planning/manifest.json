@@ -1,0 +1,99 @@
+{
+  "id": "ZG",
+  "name": "大学生职业规划",
+  "slug": "career-planning",
+  "asset_revision": "2026-10-13",
+  "publication_status": "materials_ready_not_verified_live",
+  "source_presentation_count": 784,
+  "showcased_deck_count": 4,
+  "showcased_pages": 86,
+  "images": [
+    {
+      "position": 1,
+      "title": "主图",
+      "file": "images/01.jpg",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 869464,
+      "sha256": "de0679b80e969c20a84a5a1d311085e821eb1b99053ddcb301b3a0a684362781"
+    },
+    {
+      "position": 2,
+      "title": "自我与职业认知",
+      "file": "images/02.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1110179,
+      "sha256": "8384be9afb1691a6be1942854da2a3888141b02edaee5db4bda239ee3814b4b3"
+    },
+    {
+      "position": 3,
+      "title": "决策与发展规划",
+      "file": "images/03.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1055036,
+      "sha256": "a3becad1dec029dac2a74cbb1328e1444baacb1d59e0b7df98baf2663b7aa3b6"
+    },
+    {
+      "position": 4,
+      "title": "职业认知与人职匹配",
+      "file": "images/04.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1015272,
+      "sha256": "741ca878cb5c2c04f182460765c70219a2bb95eb03ed87a188726ffc7da23201"
+    },
+    {
+      "position": 5,
+      "title": "能力积累与行动计划",
+      "file": "images/05.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1085312,
+      "sha256": "fca0536d2ef8d0e68766cb1e79e1e4d47f464c741a0d63f0101dfdef238a0304"
+    },
+    {
+      "position": 6,
+      "title": "初心与职业准备",
+      "file": "images/06.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1111923,
+      "sha256": "6d5a540715a2f14fdc6da9e57bc84aa746aa998025291fa9ab423fcccbc4f56e"
+    },
+    {
+      "position": 7,
+      "title": "发展策略与调整",
+      "file": "images/07.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1162708,
+      "sha256": "0c979f89cdb67e3e17c67b062488335a6c24a163a8ead2f6a2f11b831fbfdeeb"
+    },
+    {
+      "position": 8,
+      "title": "个人优势与职业方向",
+      "file": "images/08.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1276126,
+      "sha256": "681533588d338831d431dd03dbfb82e64e0b99c9b9c103f726c779f9f5e4fd4c"
+    },
+    {
+      "position": 9,
+      "title": "环境分析与实施计划",
+      "file": "images/09.jpg",
+      "width": 1800,
+      "height": 2400,
+      "bytes": 1180535,
+      "sha256": "5be879699a86de48709c4209be67383b93c643befa9a0effd68581d87707543e"
+    }
+  ],
+  "copy_file": "listing-copy.txt",
+  "notes": [
+    "本仓库只展示已制作的商品发布素材，未验证闲鱼实际上架。",
+    "图片为依据真实PPT选样制作的AI辅助展示图，不是逐像素原页截图。",
+    "784/694按演示文件数量计，含模板、案例和指南，不是全部空白可编辑模板。"
+  ]
+}
